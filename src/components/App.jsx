@@ -83,26 +83,3 @@ export const App = () => {
   );
 };
 
-      // <Layout>
-      //   <GlobalStyle />
-      //   {showModal && (
-      //     <Modal onClose={toggleModal}>
-      //       <CloseModalButton type="button" onClick={toggleModal}>
-      //         X
-      //       </CloseModalButton>
-      //       <BookForm onAddContact={addContact} />
-      //     </Modal>
-      //   )}
-      //   <h1>Phonebook</h1>
-      //   <ContactList>
-      //     <NewContButton type="button" onClick={toggleModal}>
-      //       New contact
-      //     </NewContButton>
-      //     <h2>Contacts</h2>
-      //     <Filter value={filter} onChange={changeFilter} />
-      //     <ContactListItem
-      //       contacts={getFilteredContacts()}
-      //       onDelete={deleteContact}
-      //     />
-      //   </ContactList>
-      // </Layout>;
