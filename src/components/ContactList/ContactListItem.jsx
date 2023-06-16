@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List, Item, SubmitButton } from './ContactList.style';
+import { List, Item, DeleteButton } from './ContactList.style';
 import { BsFillPersonFill } from 'react-icons/bs';
 
 export const ContactListItem = ({ contacts, onDelete }) => {
@@ -13,9 +13,9 @@ export const ContactListItem = ({ contacts, onDelete }) => {
               <span>{contact.name}:</span>
               <span>{contact.number}</span>
             </div>
-            <SubmitButton type="button" onClick={() => onDelete(contact.id)}>
+            <DeleteButton type="button" onClick={() => onDelete(contact.id)}>
               Delete
-            </SubmitButton>
+            </DeleteButton>
           </Item>
         );
       })}
